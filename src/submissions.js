@@ -45,7 +45,7 @@ export const submissions = [
     creator: "Shinkensen101",
     image: "NanoDev.png",
     link: "https://oshwlab.com/noobywinner587/nanodev-v1-0",
-    grant: 150
+    grant: 142
   },
   {
     title: "ESP32 S3 TOF and Mic Devboard",
