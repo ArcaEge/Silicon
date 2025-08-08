@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import { CircuitPattern } from '@/components/CircuitPattern';
 import { GlowingButton } from '@/components/GlowingButton';
 import { TerminalText } from '@/components/TerminalText';
-import { Gallery } from '@/components/Gallery';
 import { Requirements } from '@/components/Requirements';
+import { Stats } from '@/components/Stats';
+import { Gallery } from '@/components/Gallery';
 
 const Index = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -90,33 +91,14 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Gallery Section */}
-        <Gallery />
-
         {/* Requirements Section */}
         <Requirements />
 
         {/* Stats Section */}
-        <section className="py-16 border-t border-green-800/30">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                { label: 'GRANTS AWARDED', value: '$0', icon: '💰' },
-                { label: 'DEVBOARDS FUNDED', value: '2', icon: '🔧' },
-                { label: 'ACTIVE HACKERS', value: '35', icon: '👥' }
-              ].map((stat, index) => (
-                <div 
-                  key={index}
-                  className="text-center p-6 border border-green-800/30 rounded-lg bg-black/50 backdrop-blur-sm hover:border-green-400/50 transition-all duration-300"
-                >
-                  <div className="text-3xl mb-2">{stat.icon}</div>
-                  <div className="text-3xl font-bold text-green-400 font-mono">{stat.value}</div>
-                  <div className="text-sm text-gray-400 font-mono tracking-wide">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <Stats />
+
+        {/* Gallery Section */}
+        <Gallery />
 
         {/* Footer */}
         <footer className="border-t border-green-800/30 py-8 text-center text-gray-400">

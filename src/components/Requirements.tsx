@@ -8,12 +8,12 @@ export const Requirements = () => {
     },
     {
       title: "Open Source",
-      description: "Design files and schematics must be open soruce"
+      description: "Design files and schematics must be open source"
     },
 
     {
       title: "Time Tracking",
-      description: "Projects must be tracked with hackatime! (no minimum hour tracked requirement though)"
+      description: "Projects must be tracked with hackatime unless you're using EasyEDA (no minimum hour tracked requirement though)."
     },
     {
       title: "18 and Under Only",
@@ -69,8 +69,8 @@ export const Requirements = () => {
   const process = [
     {
       step: "01",
-      title: "Buidling Your Devboard",
-      description: "Build your devboard and get it working - Upload it to github or OSHWLab"
+      title: "Building Your Devboard",
+      description: "Build your devboard and get it working - Upload it to GitHub or OSHWLab"
     },
     {
       step: "02",
@@ -85,7 +85,7 @@ export const Requirements = () => {
     {
       step: "04",
       title: "Ship & Share",
-      description: "Share your completed boards with hackclubers and get features on our gallery!"
+      description: "Share your completed boards with hackclubers and get featured on our gallery!"
     }
   ];
 
